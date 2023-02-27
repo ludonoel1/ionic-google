@@ -1,0 +1,72 @@
+{
+    "project_info": {
+        "project_number": "472667180676",
+        "firebase_url": "https://younzee-dev-default-rtdb.europe-west1.firebasedatabase.app",
+        "project_id": "younzee-dev",
+        "storage_bucket": "younzee-dev.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:472667180676:android:a40c5501924e6486193cd1",
+                "android_client_info": {
+                    "package_name": "com.younzee.app.dev"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "472667180676-bebrc3dtnk8ufscc9878j6k89kpev9i5.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.younzee.app.dev",
+                        "certificate_hash": "b0e59b274db55a468700a7027a710d9ba4018bf1"
+                    }
+                },
+                {
+                    "client_id": "472667180676-bpoj434t0e7u31b5usr35jh25co6bcrv.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.younzee.app.dev",
+                        "certificate_hash": "bbedcf4118469c0e3a7eaad690a4fe8d474b9ea8"
+                    }
+                },
+                {
+                    "client_id": "472667180676-qf1oi2ehog6uqr3hbl6lga0qjr8c7kkj.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.younzee.app.dev",
+                        "certificate_hash": "a3d0b6edbfcc815b92c47cadff6aecf80913a288"
+                    }
+                },
+                {
+                    "client_id": "472667180676-futaptmbo1918b1nadgt02paf3ehe0dq.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyCqEQ-pWypC77YEboxIvyctFwjz2TaEv9Q"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "472667180676-futaptmbo1918b1nadgt02paf3ehe0dq.apps.googleusercontent.com",
+                            "client_type": 3
+                        },
+                        {
+                            "client_id": "472667180676-1u8sfjfc9kg76vdf1lmdd75a1eth9vgf.apps.googleusercontent.com",
+                            "client_type": 2,
+                            "ios_info": {
+                                "bundle_id": "com.younzee.appdev",
+                                "app_store_id": "1640728904"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}

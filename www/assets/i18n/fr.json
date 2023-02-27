@@ -1,0 +1,275 @@
+{
+  "DEV": {
+    "NOT_IMPLEMENTED_YET": "Pas encore implémenté"
+  },
+  "HOME": {
+    "ALREADY_SIGNUP": "Déjà inscrit(e) ?",
+    "CREATE_ACCOUNT": "Créer votre compte",
+    "FINGERTIPS": "à portée de main",
+    "FUTURE_MODE": "Façonnons ensemble la mode de demain",
+    "OR": "OU",
+    "SIGNIN": "Se connecter",
+    "SIGNIN_google": "Se connecter avec Google",
+    "SIGNIN_facebook": "Se connecter avec Facebook",
+    "SIGNUP": "S'inscrire",
+    "START": "Commencer",
+    "STARTING": "Vous débutez sur Younzee ?",
+    "TITLE_FEATURE_NUMERIZE": "Digitalisez votre Garde-Robe",
+    "TEXT_FEATURE_NUMERIZE": "Ajoutez, rangez et retrouvez facilement vos vêtements dans votre garde-robe digitale.",
+    "TITLE_FEATURE_CREATION": "Créez vos styles",
+    "TEXT_FEATURE_CREATION": "Une fois vos vêtements digitalisés, créez des tenues, organisez-les et gagnez du temps !",
+    "TITLE_FEATURE_CUSTOMIZED": "Profitez de conseils sur mesure",
+    "TEXT_FEATURE_CUSTOMIZED": "Recevez chaque jour des idées de styles basées sur la météo et sur vos vêtements présents dans votre garde-robe.",
+    "TITLE_FEATURE_SUSTAINABLE": "Consommez responsable et durable",
+    "TEXT_FEATURE_SUSTAINABLE": "Renouvelez votre garde robe en achetant les pièces de créateurs engagés sélectionnées pour vous, par votre personal shopper.",
+    "YOUR": "Votre",
+    "WARDROBE_CONTROL": "Reprenez le contrôle de votre garde-robe, Achetez responsable et durable",
+    "WELCOME": "Bienvenue sur"
+  },
+  "WARDROBE": {
+    "EMPTY_WARDROBE": "Votre garde-robe est vide &#x1F615",
+    "TITLE": "Garde-robe",
+    "SELECT": "Sélectionner",
+    "CROP_IMG": "Recadrer l'image",
+    "CATEGORIES": {
+      "ALL": "Tous",
+      "FAM_01": "Vêtements",
+      "FAM_02": "Chaussures",
+      "FAM_03": "Accessoires"
+    },
+    "PIECES": {
+      "TITLE": "Mes pièces",
+      "ADD_ARTICLE": "Ajouter un article",
+      "EDIT_ARTICLE": "Modifier un article",
+      "FORM": {
+        "BRAND": "Marque",
+        "CATEGORY": "Catégorie",
+        "COLORS": "Couleurs",
+        "MATERIAL": "Matière",
+        "PRICE": "Prix d'achat",
+        "SIZE": "Taille",
+        "TITLE": "Titre",
+        "STATE": {
+          "ALREADY_USED": "Seconde main",
+          "NEW": "Neuf",
+          "TITLE": "État d'achat"
+        },
+        "FIT": {
+          "NA": "n/a",
+          "OVERSIZE": "Oversize",
+          "REGULAR": "Regular",
+          "SLIM": "Slim",
+          "SUBTITLE": "Coupe",
+          "TITLE": "Vous portez ce vêtement"
+        },
+        "MESSAGE": {
+          "ERROR_TITLE": "Le titre est limité à 32 caractères"
+        }
+      }
+    },
+    "STYLES": {
+      "TITLE": "Mes styles",
+      "FORM": {
+        "TITLE": "Créer un style",
+        "TITLE_INPUT": "Titre",
+        "SEASON": {
+          "TITLE": "Pour quelle saison",
+          "SPRING_SUMMER": "Printemps/Été",
+          "AUTUMN_WINTER": "Automne/Hiver"
+        },
+        "WEATHER": {
+          "TITLE": "Pour quel temps",
+          "SUNNY": "ensoleillé",
+          "CLOUDY": "éclairé",
+          "OVERCAST": "nuageux",
+          "RAIN": "pluie",
+          "SNOW": "neige",
+          "MOON": "soir",
+          "NIGHT": "soirée"
+        },
+        "TAG": "Ajouter un tag"
+      },
+      "MODIFY": "Modifier un style"
+    }
+  },
+  "REGISTER": {
+    "ACCOUNT_CREATION_METHOD": "Utilise ton e-mail pour créer ton compte.",
+    "SIGN_UP_email": "S'inscrire par e-mail",
+    "SIGN_UP_google": "Sinscrire avec Google",
+    "SIGN_UP_facebook": "S'inscire avec Facebook",
+    "FIT_FORM": "Remplissez le formulaire pour continuer",
+    "AT_LEAST_ONE": "Au moins un ",
+    "AT_LEAST_ONE_LETTER": "Au moins une lettre ",
+    "AT_LEAST_ONE_LOWERCASE": "Au moins une lettre ",
+    "EIGHT_CHARS": "Au moins 8 ",
+    "MAX_CHAR": "Moins de 26 ",
+    "ALREADY_REGISTERED": "Déjà inscrit(e) ?",
+    "ACCEPT_RULES": "En créant un compte tu acceptes nos",
+    "GENERAL_CONDITIONS": "condition générales d’utilisation",
+    "OUR": "et notre",
+    "CONFIDENTIALITY": "charte de confidentialité",
+    "STEP": "Étape",
+    "ENTER_EMAIL": "Entre ton e-mail",
+    "EMAIL_DESCRIPTION": "Il te servira d’identifiant pour te connecter à Younzee",
+    "CHOOSE_YOUR_PASSWORD": "Choisis ton mot de passe",
+    "RESPECT_PASSWORD_PATTERN": "Respecte les recommandations pour définir un mot de passe sécurisé",
+    "CHARS": "caractères",
+    "UPPERCASE": "majuscule",
+    "LOWERCASE": "minuscule",
+    "NUMBER": "chiffre",
+    "SPECIAL_CHARACTER": "caractère spécial"
+  },
+  "EMAIL_VERIFICATION": {
+    "CONFIRMATION_EMAIL": "Confirmation email",
+    "CONFIRM_EMAIL": "Confirmez votre email",
+    "NOT_VERIFIED": "Merci de cliquer sur le lien que nous venons de t’envoyer par e-mail pour confirmer ton adresse mail : ",
+    "PLEASE_CLICK": "Merci de cliquer sur le lien que nous vous avons envoyé par mail pour confirmer votre adresse mail.",
+    "NOT_RECEIVED": "Vous n'avez pas reçu de mail ?",
+    "SEND_BACK": "Renvoyer un email"
+  },
+  "ACCOUNT_CREATION": {
+    "TITLE": "Avant tout",
+    "SUB_TITLE": "En tant que votre Personal Shopper, nous avons besoin d’un certain nombre d’informations essentielles pour mieux te connaître.",
+    "TRUST": "Aie confiance, tes données sont en sécurité ici : “Big Brother is not watching you here” !",
+    "PROFILE": "Votre profil",
+    "CREATE_PROFIL": "Créer ton profil",
+    "SEXE_TOOLTIP": "Nous demandons le genre afin d’adapter au mieux nos recommandations à vos goûts et votre style.",
+    "BEYOND": "Pour aller plus loin",
+    "BEYOND_DESCRIPTION": "Nous vous invitons à compléter vos informations pour une expérience toujours plus personnalisée et pertinente !",
+    "MORPHOLOGY": {
+      "BODY_TITLE": "Votre physique",
+      "BODY_DESCRIPTION": "Essayez d'être le plus précis possible, car c’est grâce à cela que nous pourrons vous recommander les bonnes tailles chez vos marques préférées",
+      "SIZE": "Taille",
+      "SIZE_INPUT": "Taille (en cm)",
+      "CHEST": "Tour de poitrine",
+      "CHEST_INPUT": "Tour de poitrine (en cm)",
+      "WEIGHT": "Poids",
+      "WEIGHT_INPUT": "Poids actuel (en kg)",
+      "WEIGHT_MIN": "Poids min",
+      "WEIGHT_MAX": "Poids max",
+      "MORPHO_TITLE": "Votre Morphologie",
+      "MORPHO_DESCRIPTION": "Selectionnez la morphologie qui se rapproche la plus de la votre",
+      "SIZE_TITLE": "Vos tailles",
+      "SIZE_DESCRIPTION": "Selectionnez et mesurez vos tailles pour les articles suivants"
+    }
+  },
+  "FORGOTTEN_PASSWORD": {
+    "TITLE": "Réinitialisation mot de passe",
+    "INPUT_ADVICE": "Saisissez l’adresse e-mail que vous avez utilisée lors de la création de votre compte Younzee",
+    "REINIT": "Réinitialiser",
+    "EMAIL_SENT": "Un lien a été envoyé à votre adresse e-mail. Suivez les instructions du message pour réinitialiser votre mot de passe"
+  },
+  "PROFILE": {
+    "EDIT_PROFILE": "Modifier profil",
+    "PIECES": "Pièces",
+    "STYLES": "Styles",
+    "ACCOUNT_SETTINGS": "Paramètres du compte",
+    "SIGNOUT": "Deconnectez-vous"
+  },
+  "SHARED": {
+    "APP_NAME": "Younzee",
+    "PERSONAL_SHOPPER": "Personal Shopper",
+    "NO_BRAND_FOUND": "Aucune marque n'a été trouvée",
+    "SEARCH_BRAND": "Rechercher une marque",
+    "SEARCH_ARTICLE": "Rechercher un article",
+    "FILTRES": "Filtres",
+    "CONTINU": "Continuer",
+    "NAME": "Nom",
+    "FIRSTNAME": "Prénom",
+    "EMAIL": "E-mail",
+    "CLOSE": "FERMER",
+    "PASSWORD": "Mot de passe",
+    "PASSWORD_PLACEHOLDER": "Mon mot de passe",
+    "FORGOTTEN_PASSWORD": "Mot de passe oublié ?",
+    "PROFILENAME": "Nom d'utilisateur",
+    "NICKNAME": "Pseudo",
+    "GENDER": "Genre",
+    "BIRTHDATE": "Date de naissance",
+    "BIRTHDATE_NO_FORMAT": "Date de naissance",
+    "SEXE": "Sexe (biologique)",
+    "MAN": " Homme",
+    "WOMAN": "Femme",
+    "BOTH": "Les deux",
+    "OTHER": "Autre",
+    "FIELD_REQUIRED": "Champ requis",
+    "CONFIRM": "Confirmer",
+    "FINISH": "Terminer",
+    "CANCEL": "Annuler",
+    "LOADING": "Chargement...",
+    "AVAILABLE_SOON": "Bientôt disponible",
+    "ERROR": "Une erreur est survenue",
+    "CONGRATS": "Bravo !",
+    "SUBSCRIPTION_COMPLETED": "Votre inscription est terminée, nous vous invitons à découvrir Younzee et ses fonctionnalités ",
+    "CATEGORY_NO_DATA": "Aucun article présent dans cette catégorie",
+    "GENDER_OUTFIT": "Genre vestimentaire",
+    "SAVE": "Enregistrer",
+    "MODIFY": "Modifier",
+    "ADD": "Ajouter",
+    "DELETE": "Supprimer",
+    "LATER": "Plus tard"
+  },
+  "MESSAGE": {
+    "WARDROBE_ITEMS": {
+      "201": "Ajouté avec succès",
+      "DELETE": "Supprimer avec succès",
+      "422": "Une erreur est survenue",
+      "STYLE_201": "Ajouté à vos styles",
+      "STYLE_DISLIKE_201": "Vous n'aimez pas",
+      "0": "Une erreur est survenue"
+    },
+    "PROFILE": {
+      "EDIT_200": "Modification réalisée avec succès",
+      "422": "Ce nom d'utilisateur est déjà utilisé"
+    },
+    "FORM": {
+      "CONFIRMATION_EMAIL": "un e-mail de confirmation te sera envoyé"
+    }
+  },
+  "RECOMMENDATIONS": {
+    "TITLE_1": "Profitez de votre ",
+    "TITLE_2": "Personal Shopper ",
+    "TITLE_3": "à 100%",
+    "SUBTITLE": "Notre Personal Shopper a remarqué qu’il vous manquait certains vêtements dans votre garde robe pour vous faire des recommandations toujours plus adaptées et pertinentes.",
+    "ADD_AT_LEAST": "Ajoutez au moins :",
+    "CREATION_RESULT": "Si vous ajoutez ces vêtements, je pourrais vous créer",
+    "STYLES": "styles",
+    "ADDITIONAL": "supplémentaires",
+    "ADD_NEW_ARTICLES": "Ajouter des vêtements",
+    "RECO_TODAY": "Recommendations du jour",
+    "NO_RECO": "Patience... ton personal shopper n'a plus d'idées pour toi, reviens demain !"
+  },
+  "ERROR": {
+    "FORM": {
+      "EMAIL_REQUIRED": "Veuillez entrer un e-mail",
+      "EMAIL_INVALID": "L'e-mail n'est pas valide",
+      "FORMAT_INVALID": "Format non valide !",
+      "PASSWORD_REQUIRED": "Veuillez entrer un mot de passe",
+      "FIRSTNAME_REQUIRED": "Veuillez entrer votre prénom",
+      "LASTNAME_REQUIRED": "Veuillez entrer votre nom",
+      "NICKNAME_REQUIRED": "Veuillez entrer votre nom d'utilisateur",
+      "HELP_PASSWORD": "8 caractères minimum dont 4 parmi :",
+      "HELP_PASSWORD_CHARACTER": "1 majuscule, 1 minuscule, 1 chiffre, 1 caractère spécial ",
+      "user-not-found": "L'e-mail et/ou le mot de passe est incorrect",
+      "INVALID_NICKNAME_CHARACTER": "Seulement chiffres, lettres minuscules ou symboles : “-”,”_”.",
+      "BIRTHDATE_REQUIRED": "Veuillez entrer votre date de naissance",
+      "FIRST_LETTER_UPPERCASE": "La première lettre doit être une majuscule",
+      "FIRSTNAME_VALID_CHARS": "Seulement les lettres et ces caractères sont acceptés:  - _ / . ' ,"
+    },
+    "AUTHENTICATION": {
+      "too-many-requests": "Ce compte a été temporairement désactivé. Veuillez attendre avant de réessayer ou pensez à modifier votre mot de passe",
+      "wrong-password": "L'e-mail et/ou le mot de passe ne sont pas valides",
+      "user-not-found": "L'e-mail et/ou le mot de passe ne sont pas valides",
+      "invalid-email": "L'e-mail saisi n'est pas valide",
+      "email-already-in-use": "Cet e-mail est déjà utilisé",
+      "network-request-failed": "Veuillez vérifier votre connexion internet",
+      "account-exists-with-different-credential": "Ce compte existe déjà avec une autre manière de connexion"
+    },
+    "PERSONAL_SHOPPER": {
+      "NO_MORE_CLOTHES": "Désolé mais l'application n'a plus de vêtements à vous proposer !",
+      "FAKE_DATA": "À titre indicatif, les vêtements aujourd’hui proposés servent à notre personal shopper pour identifier tes goûts, ce ne sont pas les vêtements définitifs proposés sur Younzee.",
+      "NETWORK_ERROR": "Oups ton personnal shopper a des problèmes de connexion, rafraichit donc la page"
+    },
+    "INPUT_UNCHANGED": "La valeur n'a pas était modifiée",
+    "SERVER_ERROR": "Oups il semble y avoir une erreur pour le moment. Rafraichir la page semble être une bonne idée :D"
+  }
+}

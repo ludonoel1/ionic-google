@@ -1,0 +1,26 @@
+<ion-content class="safe-area">
+  <div class="card-container">
+    <div class="title-bar">
+      <p class="ion-padding-horizontal ion-no-margin title">{{'HOME.SIGNIN' | translate }}</p>
+    </div>
+    <div class="content ion-padding-horizontal">
+      <div class="buttons-container">
+        <ion-item class="register-email" (click)="onLoginWithEmail()">
+          <ion-icon class="ion-no-margin" slot="start" src="../../assets/icon/register/logo-email.svg">
+          </ion-icon>
+          <ion-label class="ion-no-margin ion-text-center text-email">{{'HOME.SIGNIN' |
+            translate}}</ion-label>
+        </ion-item>
+        <p class="ion-margin-vertical text-or"> {{'HOME.OR' | translate }} </p>
+        <ion-item class="register-google" (click)="onLoginWithProvider('google')">
+          <ion-icon class="ion-no-margin" slot="start" src="../../assets/icon/register/logo-google.svg">
+          </ion-icon>
+          <ion-label class="ion-no-margin ion-text-center text-google">{{'HOME.SIGNIN_google' |
+            translate}}</ion-label>
+        </ion-item>
+      </div>
+      <p class="starting-text ion-text-center">{{'HOME.STARTING' | translate}} <span class="register-link" (click)="onRedirectToRegister()">{{'HOME.SIGNUP' | translate}}</span></p>
+    </div>
+  </div>
+
+</ion-content>

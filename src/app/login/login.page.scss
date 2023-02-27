@@ -1,0 +1,121 @@
+@import '../../theme/variables.scss';
+@import '../../theme/mixins.scss';
+
+ion-content {
+  --background: var(--ion-color-secondary);
+
+  .logo-container {
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+
+    img {
+      height: 3rem;
+    }
+  }
+
+  .card-container {
+    background: var(--ion-color-white);
+    height: calc(100% - 4rem);
+    @include flex(column, normal, normal);
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+
+    .title-bar {
+      height: 5.75rem;
+      background: $yellow100;
+      border-radius: 1.5rem 1.5rem 0 0;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      @include flex(column, flex-start, flex-end);
+
+      .title {
+        @include semiBoldText(1.75rem, var(--ion-color-secondary));
+        margin-bottom: 1rem;
+      }
+    }
+
+    .content {
+      margin-top: 1rem;
+
+      .forgotten-password-text {
+        @include semiBoldText(0.625rem, var(--ion-color-black))
+      }
+
+      form {
+        ion-item {
+          ion-label {
+            @include regularText(1rem, var(--ion-color-secondary))
+          }
+
+          ion-icon {
+            margin-right: 1rem;
+            align-self: end;
+          }
+        }
+      }
+
+      ion-icon {
+        align-self: center;
+      }
+
+      .buttons-container {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        @include flex(column, center, center);
+
+        ion-item {
+          display: flex;
+          align-items: center;
+          height: fit-content;
+          width: 100%;
+          min-height: 2rem;
+          border-radius: 1.5rem;
+
+          ion-icon {
+            margin-left: 8px;
+          }
+        }
+
+        .register-email {
+          --background: var(--ion-color-primary);
+        }
+
+        .text-or {
+          @include mediumText(0.875rem, $gray400)
+        }
+
+        .register-google {
+          --background: #4285F4
+        }
+
+        .register-facebook {
+          --background: #3B5998;
+          margin-top: 1rem;
+        }
+
+        .text-email {
+          @include semiBoldText(1.125rem, $gray600)
+        }
+
+        .text-google {
+          @include mediumText(1rem, var(--ion-color-white))
+        }
+
+        .text-facebook {
+          @include mediumText(1rem, var(--ion-color-white))
+        }
+      }
+
+      .starting-text {
+        @include mediumText(1rem, $gray400);
+
+        .register-link {
+          @include boldText(1rem, $gray600);
+        }
+      }
+
+
+    }
+
+  }
+}

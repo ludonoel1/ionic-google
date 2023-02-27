@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705576078712",
+    "project_id": "younzee-prod",
+    "storage_bucket": "younzee-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705576078712:android:ee3c4df8861412120f8c8d",
+        "android_client_info": {
+          "package_name": "com.younzee.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705576078712-r4kp27knk7804676aclb99c8qsicdn1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNHmQ67HX_CQgnwgQlyy2NPgwpBm4TV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705576078712-r4kp27knk7804676aclb99c8qsicdn1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

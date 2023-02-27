@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Younzee</title>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://kit.fontawesome.com/d6c06bb98b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.auth0.com/js/auth0/9.16/auth0.min.js"></script>
+    <script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
+  </head>
+  <style>
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      background-image: url('https://younzee-branding.s3.eu-west-3.amazonaws.com/first_login_background.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: auto;
+    }
+
+    #content {
+      height: 100%;
+    }
+
+    .login-form-0 {
+      padding-left: 1rem;
+      overflow-y: auto;
+      position: absolute;
+      width: 100%;
+      height: fit-content;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      bottom: 0;
+    }
+
+    .title-container-0 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .title-0 {
+      font-family: 'Antonio';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 42px;
+      color: #ffffff;
+      margin-bottom: 0px;
+    }
+
+    .buttons {
+      width: 50%;
+      align-self: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .title-younzee-0 {
+      font-family: 'Antonio';
+      font-weight: 600;
+      margin-top: 0px;
+      font-size: 42px;
+      color: #ffde59;
+    }
+
+    .subtitle-0 {
+      font-family: 'IBM Plex Sans';
+      font-size: 18px;
+      white-space: nowrap;
+      color: white;
+      padding-bottom: 16px;
+      margin-bottom: 0px;
+      font-weight: 600;
+    }
+
+    .button-primary {
+      border: none;
+      border-radius: 20px;
+      background-color: #ffde59;
+      height: 40px;
+      color: #111111;
+      font-size: 18px;
+      font-family: 'IBM Plex Sans';
+      font-weight: 600;
+    }
+
+    .button-default {
+      margin-top: 8px !important;
+      border: none;
+      height: 40px;
+      border-radius: 20px;
+      background: #111111;
+      color: #ffde59;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'IBM Plex Sans';
+    }
+
+    form {
+      width: 100%;
+    }
+
+    .form-group {
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid #dbdbdb;
+      height: 40px;
+    }
+
+    i {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      height: 24px;
+      width: 24px;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    .fa-eye,
+    .fa-eye-slash {
+      font-size: 16px;
+    }
+
+    .form-control,
+    .form-control:focus {
+      border: none;
+      width: 100%;
+      outline: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      background-color: transparent;
+      font-family: 'IBM Plex Sans';
+      font-size: 16px;
+    }
+
+    .forgotten-password {
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'IBM Plex Sans';
+    }
+
+    .signup {
+      align-self: center;
+    }
+
+    .signup-text {
+      font-size: 14px;
+      font-family: 'IBM Plex Sans';
+      color: gray;
+    }
+
+    .signup-click {
+      font-size: 14px;
+      font-weight: 700;
+      font-family: 'IBM Plex Sans';
+    }
+
+    .title-1 {
+      font-family: 'Antonio';
+      font-weight: bold;
+      font-size: 32px;
+      color: #111111;
+      margin-bottom: 32px;
+    }
+
+    .login-form-1 {
+      padding: 12rem 1rem 0rem 1rem;
+      overflow-y: auto;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .login-form-2 {
+      padding: 8rem 1rem 0rem 1rem;
+      overflow-y: auto;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .title-2 {
+      font-family: 'Antonio';
+      font-weight: bold;
+      font-size: 32px;
+      color: #111111;
+    }
+
+    .subtitle-2 {
+      font-family: 'IBM Plex Sans';
+      font-size: 16px;
+      color: #40403f;
+      padding-bottom: 36px;
+    }
+
+    .login {
+      margin-top: 14px;
+      align-self: center;
+    }
+
+    .chart-text {
+      position: absolute;
+      bottom: 0;
+      font-size: 12px;
+      font-family: 'IBM Plex Sans';
+      color: gray;
+    }
+
+    .text-bold {
+      font-weight: 700;
+    }
+
+    .reset-content {
+      padding: 1rem 1rem 0rem 1rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      display: inline-flex;
+      width: 100%;
+      align-items: center;
+    }
+
+    .big-icon {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    .title-reset {
+      font-family: 'IBM Plex Sans';
+      font-weight: 600;
+      font-size: 18px;
+      color: #111111;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .reset-subtitle {
+      font-family: 'IBM Plex Sans';
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 8px;
+    }
+
+    #error-message {
+      display: none;
+      white-space: break-spaces;
+    }
+
+    @media screen and (max-width: 320px) {
+      .title-0 {
+        font-size: 24px;
+      }
+
+      .title-younzee-0 {
+        font-size: 24px;
+      }
+
+      .subtitle-0 {
+        font-size: 14px;
+      }
+
+      .title-1,
+      .title-2 {
+        font-size: 26px;
+      }
+
+      .form-control {
+        font-size: 14px;
+      }
+
+      i {
+        font-size: 16px;
+        height: 16px;
+        width: 16px;
+      }
+
+      .forgotten-password,
+      .subtitle-2 {
+        font-size: 12px;
+      }
+
+      .button-primary,
+      .button-default {
+        font-size: 14px;
+      }
+
+      .signup-text,
+      .signup-click {
+        font-size: 12px;
+      }
+    }
+  </style>
+
+  <body>
+    <div id="content">
+      <div id="content-0" class="login-form-0">
+        <div class="title-container-0">
+          <p class="title-0">Bienvenue sur</p>
+          <p class="title-younzee-0">Younzee</p>
+          <p class="subtitle-0">Votre Personal Shopper à portée de main</p>
+        </div>
+        <div id="error-message" class="alert alert-danger"></div>
+        <div class="captcha-container"></div>
+        <div class="buttons">
+          <button type="button" id="btn-signup" class="button-primary btn-block">S'inscrire</button>
+          <button type="submit" id="btn-login" class="button-default btn-block">
+            Se connecter
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.auth0.com/js/auth0/9.16/auth0.min.js"></script>
+    <script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
+
+    <script>
+      window.addEventListener('load', function () {
+        var contentElement = document.getElementById('content');
+        var secondBackgroundUrl =
+          'https://younzee-branding.s3.eu-west-3.amazonaws.com/second_login_background.svg';
+        const initialHeight = window.innerHeight;
+        var content1 = `<div id="content-1" class="login-form-1">
+    <div id="result"></div>
+      <div class="title-container-0">
+        <p class="title-1">CONNECTEZ-VOUS !</p>
+      </div>
+    <form onsubmit="return false;" method="post">
+      <div id="email-form" class="form-group">
+        <i class="fa fa-envelope"></i>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" class="form-control" id="password" placeholder="Votre mot de passe">
+        <span ><i class="fa-solid fa-eye" id="eye-password" onclick="displayPassword(this)"></i></span>
+      </div>
+      </form>
+        <p id="link-reset" class="forgotten-password">Mot de passe oublié ?</p>
+      <div class="captcha-container"></div>
+  <div id="error-message" class="alert alert-danger"></div>
+    <div class="buttons">
+      <button type="submit" id="btn-continu-login" class="button-primary btn-block">Se connecter
+      </button>
+    </div>
+      <p class="signup"><span class="signup-text">Vous débutez sur Younzee ? </span>
+        <span id="btn-signup" class="signup-click" > S'inscrire</span></p>
+  </div>`;
+        var content2 = `
+      <div id="content-2" class="login-form-2">
+      <div class="title-container-0">
+        <p class="title-2">C'EST PARTI !</p>
+        <p class="subtitle-2">Remplissez le formulaire</p>
+      </div>
+      <form onsubmit="return false;" method="post">
+        <div class="form-group">
+          <i class="fa fa-envelope"></i>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+          <span ><i class="fa-solid fa-eye" id="eye-password" onclick="displayPassword(this)"></i></span>
+        </div>
+        <div class="form-group">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" class="form-control" id="password-confirmation" placeholder="Confirmation du mot de passe">
+          <span ><i class="fa-solid fa-eye" id="eye-confirm-password" onclick="displayConfirmationPassword(this)"></i></span>
+          </div>
+        <div id="error-message" class="alert alert-danger"></div>
+        <div class="captcha-container"></div>
+      </form>
+      <p class="login"><span class="signup-text">Déjà inscrit(e) ? </span>
+        <span id="btn-login" class="signup-click" > Se connecter</span></p>
+      <div class="buttons">
+      <button type="button" id="btn-continue-signup" class="button-primary btn-block">Continuer
+      </button>
+      </div>
+      <p class="chart-text">En créant un compte vous acceptez <span class="text-bold">nos conditions générales d'utilisation</span> et notre <span class="text-bold">charte de confidentialité</span></p>
+    </div>`;
+
+        var resetPasswordContent = `<div class="reset-content">
+        <div class="header">
+          <i id="back-button" class="fa-solid fa-arrow-left"></i>
+        <p class="title-reset">Mot de passe oublié ?</p>
+      </div>
+      <p class="reset-subtitle">Réinitialisez votre mot de passe</p>
+      <p class="subtitle-2">Renseignez l’email associé à votre compte et nous vous enverrons un email avec les instructions pour réinitialiser votre mot de passe</p>
+    <form onsubmit="return false;" method="post">
+      <div id="email-form" class="form-group">
+        <i class="fa fa-envelope"></i>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      </form>
+      <div class="captcha-container"></div>
+      <div id="error-message" class="alert alert-danger"></div>
+      <button type="submit" id="btn-continu-reset" class="button-primary btn-block">Envoyer les instructions
+    </div>
+  </div>`;
+        var confirmationEmailContent = `<div class="reset-content">
+        <div class="header">
+          <i id="back-button" class="fa-solid fa-arrow-left"></i>
+        <p class="title-reset">Mot de passe oublié ?</p>
+      </div>
+      <p class="reset-subtitle">Réinitialisez votre mot de passe</p>
+      <p class="subtitle-2">Merci de cliquer sur le lien que nous vous avons envoyé par mail pour modifier votre mot de passe</p>
+	  </div>`;
+        document.getElementById('btn-login').addEventListener('click', goToLogin);
+        document.getElementById('btn-signup').addEventListener('click', goToSignup);
+        var config = JSON.parse(decodeURIComponent(escape(window.atob('@@config@@'))));
+
+        var leeway = config.internalOptions.leeway;
+        if (leeway) {
+          var convertedLeeway = parseInt(leeway);
+
+          if (!isNaN(convertedLeeway)) {
+            config.internalOptions.leeway = convertedLeeway;
+          }
+        }
+
+        var params = Object.assign(
+          {
+            overrides: {
+              __tenant: config.auth0Tenant,
+              __token_issuer: config.authorizationServer.issuer,
+            },
+            domain: config.auth0Domain,
+            clientID: config.clientID,
+            redirectUri: config.callbackURL,
+            responseType: 'code',
+            lang: 'fr',
+          },
+          config.internalOptions
+        );
+
+        var webAuth = new auth0.WebAuth(params);
+        var databaseConnection = 'Username-Password-Authentication';
+        var captcha = webAuth.renderCaptcha(document.querySelector('.captcha-container'));
+
+        function login(e) {
+          e.preventDefault();
+          var button = this;
+          var username = document.getElementById('email').value;
+          var password = document.getElementById('password').value;
+          button.disabled = true;
+          webAuth.login(
+            {
+              realm: databaseConnection,
+              username: username,
+              password: password,
+              captcha: captcha.getValue(),
+            },
+            function (err) {
+              if (err) displayError(err, true);
+              button.disabled = false;
+            }
+          );
+        }
+
+        function signup() {
+          var button = this;
+          var email = document.getElementById('email').value;
+          var password = document.getElementById('password').value;
+          var passwordConfirmation = document.getElementById('password-confirmation').value;
+          if (email == '' || password == '' || passwordConfirmaiton == '') {
+            displayError({ code: 'field_missing' }, true);
+          } else if (password != passwordConfirmation) {
+            displayError({ code: 'confirmation-password_error' }, true);
+          } else {
+            button.disabled = true;
+            webAuth.redirect.signupAndLogin(
+              {
+                connection: databaseConnection,
+                email: email,
+                password: password,
+                captcha: captcha.getValue(),
+              },
+              function (err) {
+                if (err) displayError(err, true);
+                button.disabled = false;
+              }
+            );
+          }
+        }
+
+        function resetPassword() {
+          var email = document.getElementById('email').value;
+          webAuth.changePassword(
+            {
+              connection: databaseConnection,
+              email: email,
+            },
+            function (err, resp) {
+              if (err) {
+                displayError(err, false);
+              } else {
+                goToConfirmationEmail();
+              }
+            }
+          );
+        }
+
+        function displayError(err, isCaptcha) {
+          if (isCaptcha) {
+            captcha.reload();
+          }
+          var errorMessage = document.getElementById('error-message');
+          errorMessage.innerHTML = translate(err);
+          errorMessage.style.display = 'block';
+        }
+
+        function goToReset() {
+          document.body.style.backgroundImage = 'none';
+          document.body.style.backgroundImage = 'none';
+          document.body.style.backgroundColor = '#ffffff';
+          contentElement.innerHTML = resetPasswordContent;
+          document.getElementById('back-button').addEventListener('click', back);
+          document.getElementById('btn-continu-reset').addEventListener('click', resetPassword);
+        }
+
+        function goToConfirmationEmail() {
+          contentElement.innerHTML = confirmationEmailContent;
+          document.getElementById('back-button').addEventListener('click', back);
+        }
+
+        function goToLogin(e) {
+          document.body.style.backgroundImage = `url(${secondBackgroundUrl})`;
+          contentElement.innerHTML = content1;
+          document.getElementById('btn-continu-login').addEventListener('click', login);
+          document.getElementById('btn-signup').addEventListener('click', goToSignup);
+          document.getElementById('link-reset').addEventListener('click', goToReset);
+          window.addEventListener('resize', resizeScreenHeight);
+        }
+
+        function goToSignup(e) {
+          document.body.style.backgroundImage = `url(${secondBackgroundUrl})`;
+          contentElement.innerHTML = content2;
+          document.getElementById('btn-continue-signup').addEventListener('click', signup);
+          document.getElementById('btn-login').addEventListener('click', goToLogin);
+          window.addEventListener('resize', resizeScreenHeight);
+        }
+
+        function translate(err) {
+          switch (err.code) {
+            case 'confirmation-password_error':
+              return 'Les mots de passe ne sont pas identiques';
+            case 'invalid_user_password':
+              return "Le mot de passe et/ou l'email est incorrect";
+            case 'invalid sign up':
+              return "Le mot de passe et/ou l'email est incorrect";
+            case 'invalid_password':
+              return 'Mot de passe et/ou email incorrects';
+            case 'password_strength_error':
+              return 'Veuillez entrer un mot de passe plus sécurisé';
+            case 'user_exists':
+              return 'Ce compte existe déjà';
+            case 'username_exists':
+              return "L'adresse mail est déjà utilisée";
+            case 'String (password) is too short (0 chars), minimum 1':
+              return 'Veuillez saisir un mot de passe';
+            case 'error in email - email format validation failed:':
+              return 'Veuillez saisir un e-mail valide:';
+            case 'email or username are required.':
+              return 'Veuillez saisir un e-mail';
+            case 'undefined':
+              return 'E-mail pas reconnu';
+            case 'field_missing':
+              return 'Veuillez renseigner tous les champs';
+            default:
+              return 'Veuillez vérifier vos informations';
+          }
+        }
+
+        function back(icon) {
+          goToLogin();
+        }
+        function resizeScreenHeight() {
+          var metaViewport = document.getElementById('viewport');
+          metaViewport.setAttribute(
+            'content',
+            'height=' + initialHeight + 'px, width=device-width, initial-scale=1.0'
+          );
+        }
+      });
+      function displayPassword(icon) {
+        var x = document.getElementById('password');
+        if (x.type === 'password') {
+          x.type = 'text';
+        } else {
+          x.type = 'password';
+        }
+        icon.classList.toggle('fa-eye-slash');
+      }
+      function displayConfirmationPassword(icon) {
+        var x = document.getElementById('password-confirmation');
+        if (x.type === 'password') {
+          x.type = 'text';
+        } else {
+          x.type = 'password';
+        }
+        icon.classList.toggle('fa-eye-slash');
+      }
+    </script>
+  </body>
+</html>

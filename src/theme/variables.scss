@@ -1,0 +1,131 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+/** Ionic CSS Variables **/
+
+// colors
+$black2: #40403f;
+$gray600: #111111; //used
+$gray500: #292929; //used
+$gray400: #595959; //used
+$gray300: #888888; //used
+$gray200: #B8B8B8;
+$gray2: #9d9c99;
+$gray3: #dbdbdb;
+$yellow100: #fffcef;
+$yellow200: #fff5ce;
+$yellow3: #fde896;
+$yellow4: #fceeb6;
+$yellow5: #fbf2d4;
+$yellow6: #FFDE59;
+$white80: rgba(255, 255, 255, 0.8);
+$dark75: rgba(0, 0, 0, 0.25); //buttons shadow
+
+:root {
+  --ion-color-white: #ffffff;
+  --ion-color-black: #000000;
+  /** primary color**/
+  --ion-color-primary: #ffde59;
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #111111;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #ffeeae;
+  --ion-color-primary-tint: #ffde59;
+
+  /** secondary for text**/
+  --ion-color-secondary: #111111;
+  --ion-color-secondary-rgb: 17, 17, 17;
+  --ion-color-secondary-contrast: #ffde59;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #0f0f0f;
+  --ion-color-secondary-tint: #292929;
+
+  /** tertiary used for input background and background icone**/
+  --ion-color-tertiary: #dbdbdb; //same as gray3
+  --ion-color-tertiary-rgb: 219, 219, 219;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+  --ion-color-tertiary-shade: #c1c1c1;
+  --ion-color-tertiary-tint: #dfdfdf;
+
+  /** success **/
+  --ion-color-success: #01db72;
+  --ion-color-success-rgb: 1, 219, 114;
+  --ion-color-success-contrast: #000000;
+  --ion-color-success-contrast-rgb: 0, 0, 0;
+  --ion-color-success-shade: #01c164;
+  --ion-color-success-tint: #1adf80;
+
+  /** warning **/
+  --ion-color-warning: #ffc409;
+  --ion-color-warning-rgb: 255, 196, 9;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #e0ac08;
+  --ion-color-warning-tint: #ffca22;
+
+  /** danger **/
+  --ion-color-danger: #ff1166;
+  --ion-color-danger-rgb: 255, 17, 102;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #e00f5a;
+  --ion-color-danger-tint: #ff2976;
+
+  /** dark **/
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 36, 40;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /** medium **/
+  --ion-color-medium: #92949c;
+  --ion-color-medium-rgb: 146, 148, 156;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #808289;
+  --ion-color-medium-tint: #9d9fa6;
+
+  /** light **/
+  --ion-color-light: rgba(255, 222, 89, 0.19);
+  --ion-color-light-rgb: 244, 245, 248;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+
+  .spinner-bubbles {
+    color: var(--ion-color-primary);
+  }
+
+  /** Tab-bar **/
+  ion-tab-button.tab-selected {
+    --color-selected: var(--ion-color-primary);
+  }
+
+  ion-segment {
+    --background: var(--ion-color-white);
+  }
+
+  ion-segment-button {
+    --background-checked: var(--ion-color-primary);
+    --color-checked: black;
+    --indicator-transition: none;
+  }
+
+  ion-button {
+    text-transform: none;
+  }
+
+  --ion-toolbar-background: white;
+  --text-font-style: 'IBMPlexSans';
+  --title-font-style: 'IBMPlexSans';
+}
+
+// Verified
+$width-sd: 300px; //fold
+$width-md: 380px; //iphone SE
+$width-ld: 412px; //iphone XR
+$width-xld: 768px; //ipad

@@ -16,6 +16,7 @@ ext {
     $firebaseMessagingVersion = '23.0.5'
     $androidxBrowserVersion = '1.4.0'
     rgcfaIncludeGoogle = true
+    rgcfaIncludeFacebook = true
     appVersion = "1.1.7-snapshot"
     apkVersionCode = 33
 }
